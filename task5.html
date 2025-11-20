@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Цикл for in</title>
+        <link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		<script> 
+			 let person = {
+            name: "Марія",
+            age: 18,
+            city: "Львів"
+        };
+
+        document.write("<p>Властивості об'єкта person:</p>");
+        for(let key in person) {
+            document.write(key + " = " + person[key] + "<br>");
+        }
+		</script>
+        <a href="index.html" class="back-btn">← Повернутись на головну</a>
+	</body>
+</html>

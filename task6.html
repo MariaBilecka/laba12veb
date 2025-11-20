@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання оператора IF</title>
+        <link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		<script> "use strict";
+			let play = confirm("Хочеш зіграти у гру 'Парне чи Непарне'?");
+
+                if(play) {
+                    let userChoice = prompt("Введи свій вибір: парне або непарне").toLowerCase();
+                    if(userChoice !== "парне" && userChoice !== "непарне") {
+                        alert("Некоректний вибір. Спробуй ще раз!");
+                    } else {
+                        let number = Math.floor(Math.random() * 20) + 1; // випадкове число 1-20
+                        alert("Комп’ютер вибрав число: " + number);
+                        let result = (number % 2 === 0) ? "парне" : "непарне";
+
+                        if(userChoice === result) {
+                            alert("Вітаю! Ти вгадав, число " + result);
+                        } else {
+                            alert("На жаль, ти не вгадав, число " + result);
+                        }
+                    }
+                } else {
+                    alert("Шкода, може наступного разу!");
+                }
+		</script>
+        <a href="index.html" class="back-btn">← Повернутись на головну</a>
+	</body>
+</html>

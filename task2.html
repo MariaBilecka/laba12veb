@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Знаходження найбільшого числа</title>
+        <link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		<script>
+			"use strict";
+			 document.write("<p style='text-align:center'><strong>Знаходження найбільшого числа</strong></p>");
+
+        let a = parseInt(prompt("Введіть перше число"));
+        let b = parseInt(prompt("Введіть друге число"));
+        let c = parseInt(prompt("Введіть третє число"));
+
+        if (a > b && a > c) document.write("Найбільше число: " + a);
+        else if (b > c) document.write("Найбільше число: " + b);
+        else document.write("Найбільше число: " + c);
+
+        // тернарний оператор
+        let max = a > b ? a : b;
+        max = max > c ? max : c;
+        document.write("<p>Через тернарний оператор: " + max + "</p>");
+		</script>
+        <a href="index.html" class="back-btn">← Повернутись на головну</a>
+	</body>
+</html>

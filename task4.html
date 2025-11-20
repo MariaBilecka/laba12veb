@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Цикли</title>
+        <link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+			  let n = parseInt(prompt("Введіть число для обчислення факторіалу"));
+
+                // FOR
+                let fact = 1;
+                for(let i = 1; i <= n; i++) fact *= i;
+                document.write("<p>Факторіал числа " + n + " через FOR: " + fact + "</p>");
+
+                // WHILE
+                let i = 1, fact2 = 1;
+                while(i <= n) {
+                    fact2 *= i;
+                    i++;
+                }
+                document.write("<p>Факторіал числа " + n + " через WHILE: " + fact2 + "</p>");
+
+                // DO WHILE
+                i = 1; let fact3 = 1;
+                do {
+                    fact3 *= i;
+                    i++;
+                } while(i <= n);
+        document.write("<p>Факторіал числа " + n + " через DO WHILE: " + fact3 + "</p>");
+		</script>
+        <a href="index.html" class="back-btn">← Повернутись на головну</a>
+	</body>
+</html>
